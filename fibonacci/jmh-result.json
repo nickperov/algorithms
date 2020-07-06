@@ -1,0 +1,1780 @@
+[
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "RECURSIVE",
+            "number" : "10"
+        },
+        "primaryMetric" : {
+            "score" : 0.1824462552931647,
+            "scoreError" : 0.008729843401437665,
+            "scoreConfidence" : [
+                0.173716411891727,
+                0.19117609869460236
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.17655634024466602,
+                "50.0" : 0.1777252865867096,
+                "90.0" : 0.20535195495937006,
+                "95.0" : 0.2112931676140522,
+                "99.0" : 0.21152637223742332,
+                "99.9" : 0.21152637223742332,
+                "99.99" : 0.21152637223742332,
+                "99.999" : 0.21152637223742332,
+                "99.9999" : 0.21152637223742332,
+                "100.0" : 0.21152637223742332
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.18809631482184086,
+                    0.19175903166369013,
+                    0.17828842822546953,
+                    0.17713079553482833,
+                    0.1775230826110671,
+                    0.17788037830275186,
+                    0.17757019487066736,
+                    0.17723837323777095,
+                    0.1780154759718518,
+                    0.17724600044481345
+                ],
+                [
+                    0.1825393065370845,
+                    0.18424617729552703,
+                    0.20686227977000118,
+                    0.21152637223742332,
+                    0.17789602890115733,
+                    0.17753360530189047,
+                    0.17655634024466602,
+                    0.17698611610026277,
+                    0.17721937765848939,
+                    0.17681142613204112
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "RECURSIVE",
+            "number" : "20"
+        },
+        "primaryMetric" : {
+            "score" : 24.259751396690138,
+            "scoreError" : 0.544545535259142,
+            "scoreConfidence" : [
+                23.715205861430995,
+                24.80429693194928
+            ],
+            "scorePercentiles" : {
+                "0.0" : 23.575919365065896,
+                "50.0" : 24.06472464445647,
+                "90.0" : 25.17453762870431,
+                "95.0" : 25.423186256030622,
+                "99.0" : 25.436220111998942,
+                "99.9" : 25.436220111998942,
+                "99.99" : 25.436220111998942,
+                "99.999" : 25.436220111998942,
+                "99.9999" : 25.436220111998942,
+                "100.0" : 25.436220111998942
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    24.924052790117674,
+                    23.738571750715074,
+                    24.339047517060777,
+                    23.727812287936523,
+                    23.65597544677177,
+                    23.741235087186254,
+                    23.659373343932167,
+                    23.575919365065896,
+                    23.588390050164268,
+                    23.87407968833178
+                ],
+                [
+                    25.165489353350008,
+                    24.244666181818182,
+                    24.991826535023602,
+                    23.88478310709475,
+                    23.70315710134485,
+                    24.49859033836778,
+                    24.493491002520322,
+                    24.776803882369553,
+                    25.17554299263257,
+                    25.436220111998942
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "RECURSIVE",
+            "number" : "30"
+        },
+        "primaryMetric" : {
+            "score" : 2960.8959546828855,
+            "scoreError" : 87.30017213635107,
+            "scoreConfidence" : [
+                2873.5957825465343,
+                3048.1961268192367
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2720.652896382921,
+                "50.0" : 2941.015709859252,
+                "90.0" : 3083.0435954542936,
+                "95.0" : 3093.4876315488623,
+                "99.0" : 3094.029353541602,
+                "99.9" : 3094.029353541602,
+                "99.99" : 3094.029353541602,
+                "99.999" : 3094.029353541602,
+                "99.9999" : 3094.029353541602,
+                "100.0" : 3094.029353541602
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    2964.0403378778897,
+                    2955.768439716312,
+                    2941.4449411764704,
+                    2918.6750802451124,
+                    2939.393153100206,
+                    2918.9419025386637,
+                    2930.9452520515824,
+                    2934.1033440891756,
+                    2937.916093979442,
+                    2940.586478542034
+                ],
+                [
+                    3026.1643872919817,
+                    3035.3221480582524,
+                    3071.258642922935,
+                    3070.875475751995,
+                    3094.029353541602,
+                    3081.6817313616757,
+                    3083.1949136868066,
+                    2896.6635679119604,
+                    2720.652896382921,
+                    2756.260953430697
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "TAIL_RECURSIVE",
+            "number" : "10"
+        },
+        "primaryMetric" : {
+            "score" : 0.010791835778113736,
+            "scoreError" : 5.979783157412798E-4,
+            "scoreConfidence" : [
+                0.010193857462372457,
+                0.011389814093855016
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.010123259602584332,
+                "50.0" : 0.010719201434954036,
+                "90.0" : 0.012170356796811353,
+                "95.0" : 0.012399175612213039,
+                "99.0" : 0.012408151110322186,
+                "99.9" : 0.012408151110322186,
+                "99.99" : 0.012408151110322186,
+                "99.999" : 0.012408151110322186,
+                "99.9999" : 0.012408151110322186,
+                "100.0" : 0.012408151110322186
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.010814722566955181,
+                    0.01017862890809657,
+                    0.010123259602584332,
+                    0.010177918975019164,
+                    0.010167075674544793,
+                    0.01014804419657658,
+                    0.010269480855407758,
+                    0.010150771570502724,
+                    0.010378418791048987,
+                    0.010512455584869622
+                ],
+                [
+                    0.011011245025539702,
+                    0.010805379596092665,
+                    0.010746677892388251,
+                    0.01074063783159255,
+                    0.010697765038315519,
+                    0.012228641148139253,
+                    0.011481624729562037,
+                    0.011150018829856613,
+                    0.01164579763486026,
+                    0.012408151110322186
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "TAIL_RECURSIVE",
+            "number" : "20"
+        },
+        "primaryMetric" : {
+            "score" : 0.02139941307078095,
+            "scoreError" : 0.0013201032832184793,
+            "scoreConfidence" : [
+                0.02007930978756247,
+                0.02271951635399943
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.019559704192680837,
+                "50.0" : 0.02095796054831468,
+                "90.0" : 0.02458746461482029,
+                "95.0" : 0.024982769404020368,
+                "99.0" : 0.024994766347813772,
+                "99.9" : 0.024994766347813772,
+                "99.99" : 0.024994766347813772,
+                "99.999" : 0.024994766347813772,
+                "99.9999" : 0.024994766347813772,
+                "100.0" : 0.024994766347813772
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.019607647655764563,
+                    0.019559704192680837,
+                    0.019711019722105073,
+                    0.021461864338943884,
+                    0.020044363616078423,
+                    0.020520588523524435,
+                    0.02080908722633799,
+                    0.021012929744529316,
+                    0.023081198900691487,
+                    0.021992255387176966
+                ],
+                [
+                    0.020262646686943577,
+                    0.024994766347813772,
+                    0.021867187847316557,
+                    0.020693428319738555,
+                    0.020902991352100043,
+                    0.024754827471945715,
+                    0.022124663570051283,
+                    0.022143086611111,
+                    0.020677916009090615,
+                    0.021766087891674807
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "TAIL_RECURSIVE",
+            "number" : "30"
+        },
+        "primaryMetric" : {
+            "score" : 0.033928799365291286,
+            "scoreError" : 0.001491916860499366,
+            "scoreConfidence" : [
+                0.03243688250479192,
+                0.035420716225790655
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.03176919953855688,
+                "50.0" : 0.03333153202736801,
+                "90.0" : 0.0369007570559721,
+                "95.0" : 0.03769551154361626,
+                "99.0" : 0.03773137528938581,
+                "99.9" : 0.03773137528938581,
+                "99.99" : 0.03773137528938581,
+                "99.999" : 0.03773137528938581,
+                "99.9999" : 0.03773137528938581,
+                "100.0" : 0.03773137528938581
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.032717798706408556,
+                    0.03176919953855688,
+                    0.03261659813032976,
+                    0.03222292600208137,
+                    0.03211362243285621,
+                    0.0321706615220839,
+                    0.03328328303145049,
+                    0.033176781138789274,
+                    0.03540021937300407,
+                    0.03529525532099561
+                ],
+                [
+                    0.03773137528938581,
+                    0.03701410037399475,
+                    0.032780842114406336,
+                    0.033344783782262376,
+                    0.03468443578079857,
+                    0.03588066719376828,
+                    0.0334590068753971,
+                    0.03574658568206179,
+                    0.03331828027247365,
+                    0.03384956474472096
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "TAIL_RECURSIVE_OPT",
+            "number" : "10"
+        },
+        "primaryMetric" : {
+            "score" : 0.007593726249974701,
+            "scoreError" : 5.437809277821866E-4,
+            "scoreConfidence" : [
+                0.007049945322192514,
+                0.008137507177756888
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.006587948921839957,
+                "50.0" : 0.007487076670605382,
+                "90.0" : 0.008327722902610503,
+                "95.0" : 0.008504186609788088,
+                "99.0" : 0.008512993509169328,
+                "99.9" : 0.008512993509169328,
+                "99.99" : 0.008512993509169328,
+                "99.999" : 0.008512993509169328,
+                "99.9999" : 0.008512993509169328,
+                "100.0" : 0.008512993509169328
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.008129034142068118,
+                    0.008151032106944846,
+                    0.00820678890566775,
+                    0.008164709543371495,
+                    0.008245529332204151,
+                    0.008336855521544543,
+                    0.0080533517049969,
+                    0.00811892839623579,
+                    0.008512993509169328,
+                    0.0070156187785770565
+                ],
+                [
+                    0.006587948921839957,
+                    0.007345549141825741,
+                    0.0066596656980268815,
+                    0.007505082644894356,
+                    0.007052878211351523,
+                    0.006962137251931778,
+                    0.006883242210159903,
+                    0.007026442777866872,
+                    0.007469070696316407,
+                    0.007447665504500621
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "TAIL_RECURSIVE_OPT",
+            "number" : "20"
+        },
+        "primaryMetric" : {
+            "score" : 0.007677605652363262,
+            "scoreError" : 2.2009259271120498E-4,
+            "scoreConfidence" : [
+                0.007457513059652057,
+                0.007897698245074468
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.007494373428591531,
+                "50.0" : 0.007575713601010296,
+                "90.0" : 0.007982706697552078,
+                "95.0" : 0.008577941314649097,
+                "99.0" : 0.008608541203859095,
+                "99.9" : 0.008608541203859095,
+                "99.99" : 0.008608541203859095,
+                "99.999" : 0.008608541203859095,
+                "99.9999" : 0.008608541203859095,
+                "100.0" : 0.008608541203859095
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.0075375079300225535,
+                    0.007641847396894237,
+                    0.007540916434309649,
+                    0.007494373428591531,
+                    0.0077350674460588105,
+                    0.008608541203859095,
+                    0.007667946428638587,
+                    0.007858176198588673,
+                    0.00770031394270663,
+                    0.007996543419659123
+                ],
+                [
+                    0.007519556042025471,
+                    0.007560740581285392,
+                    0.007573700391453863,
+                    0.007526884623855867,
+                    0.007577726810566728,
+                    0.007533262164234503,
+                    0.007662072715224847,
+                    0.00755463978054147,
+                    0.007531385894061151,
+                    0.00773091021468705
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "TAIL_RECURSIVE_OPT",
+            "number" : "30"
+        },
+        "primaryMetric" : {
+            "score" : 0.00986967126530102,
+            "scoreError" : 1.0113408486730312E-4,
+            "scoreConfidence" : [
+                0.009768537180433717,
+                0.009970805350168324
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.009762342678701921,
+                "50.0" : 0.009841790664220041,
+                "90.0" : 0.010138239047113824,
+                "95.0" : 0.01022662994513123,
+                "99.0" : 0.01022974862381167,
+                "99.9" : 0.01022974862381167,
+                "99.99" : 0.01022974862381167,
+                "99.999" : 0.01022974862381167,
+                "99.9999" : 0.01022974862381167,
+                "100.0" : 0.01022974862381167
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.009833682422624257,
+                    0.00985461462623895,
+                    0.009858859631195404,
+                    0.009858735304283387,
+                    0.00987601501931248,
+                    0.009849624666740208,
+                    0.009823646073834057,
+                    0.009870986166610531,
+                    0.009852159831667295,
+                    0.009833956661699875
+                ],
+                [
+                    0.009762342678701921,
+                    0.009808395065806367,
+                    0.009786507317143438,
+                    0.009821701385696983,
+                    0.009810688348213479,
+                    0.00981436838612775,
+                    0.009820665289099027,
+                    0.00985935275701045,
+                    0.010167375050202862,
+                    0.01022974862381167
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "DYNAMIC",
+            "number" : "10"
+        },
+        "primaryMetric" : {
+            "score" : 0.08460994324519469,
+            "scoreError" : 0.0020694401056389872,
+            "scoreConfidence" : [
+                0.0825405031395557,
+                0.08667938335083368
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.08207861293119686,
+                "50.0" : 0.08419041982047751,
+                "90.0" : 0.08937281038911508,
+                "95.0" : 0.09059119716231193,
+                "99.0" : 0.09064370992209568,
+                "99.9" : 0.09064370992209568,
+                "99.99" : 0.09064370992209568,
+                "99.999" : 0.09064370992209568,
+                "99.9999" : 0.09064370992209568,
+                "100.0" : 0.09064370992209568
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.08738701135336598,
+                    0.09064370992209568,
+                    0.08959345472642054,
+                    0.08395439533039305,
+                    0.08480467131798207,
+                    0.08450649447934083,
+                    0.08442644431056195,
+                    0.08565776311287658,
+                    0.08603115969501099,
+                    0.0859439314723725
+                ],
+                [
+                    0.08250646808114535,
+                    0.08320324720505579,
+                    0.08308045086418726,
+                    0.08315191475297232,
+                    0.08310640742995713,
+                    0.08475297345313931,
+                    0.0826863135475507,
+                    0.08207861293119686,
+                    0.08234388112844634,
+                    0.08233955978982233
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "DYNAMIC",
+            "number" : "20"
+        },
+        "primaryMetric" : {
+            "score" : 0.20190291072853633,
+            "scoreError" : 0.005958918220624963,
+            "scoreConfidence" : [
+                0.19594399250791136,
+                0.2078618289491613
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.19453951327153401,
+                "50.0" : 0.20110673933029216,
+                "90.0" : 0.21016485974225094,
+                "95.0" : 0.21599526038516376,
+                "99.0" : 0.21630195247695594,
+                "99.9" : 0.21630195247695594,
+                "99.99" : 0.21630195247695594,
+                "99.999" : 0.21630195247695594,
+                "99.9999" : 0.21630195247695594,
+                "100.0" : 0.21630195247695594
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.19550071523207804,
+                    0.19484514576446285,
+                    0.19586186594019286,
+                    0.1957993165748829,
+                    0.19539550734050176,
+                    0.19453951327153401,
+                    0.19532820189787015,
+                    0.1959659014409268,
+                    0.19622772805812982,
+                    0.1964989989426505
+                ],
+                [
+                    0.20705931641390493,
+                    0.2059625294944325,
+                    0.20643106678980952,
+                    0.20641093297976718,
+                    0.20631320740829917,
+                    0.20571447971793386,
+                    0.20759812253278445,
+                    0.21016811064111238,
+                    0.21630195247695594,
+                    0.2101356016524981
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "DYNAMIC",
+            "number" : "30"
+        },
+        "primaryMetric" : {
+            "score" : 0.30551270143446585,
+            "scoreError" : 0.004901050848196521,
+            "scoreConfidence" : [
+                0.3006116505862693,
+                0.3104137522826624
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.30019592756668534,
+                "50.0" : 0.30372560319970987,
+                "90.0" : 0.3147696920921659,
+                "95.0" : 0.32287771980518426,
+                "99.0" : 0.32327382764748586,
+                "99.9" : 0.32327382764748586,
+                "99.99" : 0.32327382764748586,
+                "99.999" : 0.32327382764748586,
+                "99.9999" : 0.32327382764748586,
+                "100.0" : 0.32327382764748586
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.3050417249685338,
+                    0.3061841335279957,
+                    0.3047598702842219,
+                    0.3051981350601286,
+                    0.3061144303061585,
+                    0.30861390548949424,
+                    0.30953188370857265,
+                    0.31535167080145404,
+                    0.32327382764748586,
+                    0.30930959475694253
+                ],
+                [
+                    0.3026913361151978,
+                    0.30182178208737587,
+                    0.30232132430106556,
+                    0.30177200865639797,
+                    0.3018904064462599,
+                    0.3012799364512659,
+                    0.30019592756668534,
+                    0.30235295401522466,
+                    0.30152756295669403,
+                    0.30102161354216256
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "BOTTOM_UP",
+            "number" : "10"
+        },
+        "primaryMetric" : {
+            "score" : 0.07478094496390898,
+            "scoreError" : 7.461930421146732E-4,
+            "scoreConfidence" : [
+                0.0740347519217943,
+                0.07552713800602366
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.07360062853068874,
+                "50.0" : 0.07477754649107027,
+                "90.0" : 0.07591681362998748,
+                "95.0" : 0.0769609168530164,
+                "99.0" : 0.07701546867411234,
+                "99.9" : 0.07701546867411234,
+                "99.99" : 0.07701546867411234,
+                "99.999" : 0.07701546867411234,
+                "99.9999" : 0.07701546867411234,
+                "100.0" : 0.07701546867411234
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.07476223846844526,
+                    0.0751833761391491,
+                    0.07479285451369526,
+                    0.07592443225219361,
+                    0.07415530899685523,
+                    0.07375997088958779,
+                    0.07360062853068874,
+                    0.07495695229480388,
+                    0.07396600858004984,
+                    0.07407232701083813
+                ],
+                [
+                    0.07497252969670477,
+                    0.0746706383001851,
+                    0.07571338207444368,
+                    0.07504916474400296,
+                    0.0748691836473172,
+                    0.07412269104991961,
+                    0.07398605944478714,
+                    0.07701546867411234,
+                    0.07584824603013227,
+                    0.07419743794026797
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "BOTTOM_UP",
+            "number" : "20"
+        },
+        "primaryMetric" : {
+            "score" : 0.14876888531372326,
+            "scoreError" : 0.0013301656482882396,
+            "scoreConfidence" : [
+                0.147438719665435,
+                0.1500990509620115
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.1473946433531346,
+                "50.0" : 0.1483516636685482,
+                "90.0" : 0.15120028792190726,
+                "95.0" : 0.1537853433374685,
+                "99.0" : 0.15391453063000707,
+                "99.9" : 0.15391453063000707,
+                "99.99" : 0.15391453063000707,
+                "99.999" : 0.15391453063000707,
+                "99.9999" : 0.15391453063000707,
+                "100.0" : 0.15391453063000707
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.14836095983908487,
+                    0.1476985214689206,
+                    0.14768776296918618,
+                    0.14847249606701138,
+                    0.1478943073968835,
+                    0.14988788306581713,
+                    0.15002581620595343,
+                    0.15391453063000707,
+                    0.15133078477923548,
+                    0.14899309448645132
+                ],
+                [
+                    0.1484689700105664,
+                    0.1480723444285676,
+                    0.14840063735714917,
+                    0.14843677563003976,
+                    0.14817131682361556,
+                    0.1478357702897958,
+                    0.1479350330873495,
+                    0.1473946433531346,
+                    0.14805369088768455,
+                    0.14834236749801155
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "BOTTOM_UP",
+            "number" : "30"
+        },
+        "primaryMetric" : {
+            "score" : 0.21400121233321717,
+            "scoreError" : 0.0024861113299257708,
+            "scoreConfidence" : [
+                0.2115151010032914,
+                0.21648732366314294
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.21212831824085063,
+                "50.0" : 0.21297187501874218,
+                "90.0" : 0.2208241425409224,
+                "95.0" : 0.22259288718507617,
+                "99.0" : 0.2226543235284879,
+                "99.9" : 0.2226543235284879,
+                "99.99" : 0.2226543235284879,
+                "99.999" : 0.2226543235284879,
+                "99.9999" : 0.2226543235284879,
+                "100.0" : 0.2226543235284879
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.2128533554530229,
+                    0.21309039458446147,
+                    0.21382879403638316,
+                    0.2123269199820039,
+                    0.21541105546694722,
+                    0.21282419320831633,
+                    0.21373797946432158,
+                    0.21280493079497334,
+                    0.21309815780862607,
+                    0.21255074221806733
+                ],
+                [
+                    0.21333241945725787,
+                    0.21212831824085063,
+                    0.21266321505412397,
+                    0.21382820898218943,
+                    0.21262206743835355,
+                    0.2123703614558282,
+                    0.2226543235284879,
+                    0.22142559666025297,
+                    0.21238140022902194,
+                    0.2140918126008542
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "ITERATIVE_01",
+            "number" : "10"
+        },
+        "primaryMetric" : {
+            "score" : 0.09728579482395062,
+            "scoreError" : 0.002438033473280956,
+            "scoreConfidence" : [
+                0.09484776135066966,
+                0.09972382829723159
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.0945350362559013,
+                "50.0" : 0.09587485027911094,
+                "90.0" : 0.10242385555261657,
+                "95.0" : 0.10330241815413203,
+                "99.0" : 0.10334220850881294,
+                "99.9" : 0.10334220850881294,
+                "99.99" : 0.10334220850881294,
+                "99.999" : 0.10334220850881294,
+                "99.9999" : 0.10334220850881294,
+                "100.0" : 0.10334220850881294
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.09585247336428097,
+                    0.09578770565692223,
+                    0.09610893535843458,
+                    0.10254640141519492,
+                    0.09782903673189883,
+                    0.09808300148331635,
+                    0.10115284576147934,
+                    0.1001710276341425,
+                    0.10334220850881294,
+                    0.10132094278941153
+                ],
+                [
+                    0.09538954801355178,
+                    0.09532108930071732,
+                    0.09485012108160748,
+                    0.09530915675542172,
+                    0.09589722719394089,
+                    0.09566098999262916,
+                    0.0960569171434402,
+                    0.0953519561356669,
+                    0.09514927590224191,
+                    0.0945350362559013
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "ITERATIVE_01",
+            "number" : "20"
+        },
+        "primaryMetric" : {
+            "score" : 0.2283612244968496,
+            "scoreError" : 0.010133588272362737,
+            "scoreConfidence" : [
+                0.21822763622448685,
+                0.23849481276921233
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.21648472390836726,
+                "50.0" : 0.2269344026769724,
+                "90.0" : 0.2446259442606623,
+                "95.0" : 0.24511424156003722,
+                "99.0" : 0.24513354899952616,
+                "99.9" : 0.24513354899952616,
+                "99.99" : 0.24513354899952616,
+                "99.999" : 0.24513354899952616,
+                "99.9999" : 0.24513354899952616,
+                "100.0" : 0.24513354899952616
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.21758079681991316,
+                    0.2173643761785433,
+                    0.21771868542147987,
+                    0.21648472390836726,
+                    0.21719363899979302,
+                    0.21821284991900264,
+                    0.2178540237968617,
+                    0.2168184124301315,
+                    0.21751750248797486,
+                    0.21662065742744563
+                ],
+                [
+                    0.23608049570333037,
+                    0.23565595543494217,
+                    0.23673546420137662,
+                    0.2358512451599126,
+                    0.2371714615343276,
+                    0.24305338556159,
+                    0.24474740020974728,
+                    0.23589702502382853,
+                    0.24513354899952616,
+                    0.24353284071889764
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "ITERATIVE_01",
+            "number" : "30"
+        },
+        "primaryMetric" : {
+            "score" : 0.3249594866609635,
+            "scoreError" : 0.01967230600970121,
+            "scoreConfidence" : [
+                0.3052871806512623,
+                0.34463179267066474
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.30216901337723373,
+                "50.0" : 0.3233209241094823,
+                "90.0" : 0.35676968166130657,
+                "95.0" : 0.3581218094184942,
+                "99.0" : 0.3581435577517167,
+                "99.9" : 0.3581435577517167,
+                "99.99" : 0.3581435577517167,
+                "99.999" : 0.3581435577517167,
+                "99.9999" : 0.3581435577517167,
+                "100.0" : 0.3581435577517167
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.3421994381445768,
+                    0.3424762078528357,
+                    0.34416271411873944,
+                    0.34226296835338915,
+                    0.3483194968276603,
+                    0.35770859108726727,
+                    0.3581435577517167,
+                    0.343076389362234,
+                    0.34466619694799105,
+                    0.34335125914289416
+                ],
+                [
+                    0.303379166324786,
+                    0.3029214214623401,
+                    0.30318336348530295,
+                    0.30216901337723373,
+                    0.3036066828979534,
+                    0.3042133532989244,
+                    0.3021828544430254,
+                    0.30444241007438777,
+                    0.3040915420440895,
+                    0.30263310622192385
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "ITERATIVE_02",
+            "number" : "10"
+        },
+        "primaryMetric" : {
+            "score" : 0.05088300417099334,
+            "scoreError" : 8.58481301045954E-4,
+            "scoreConfidence" : [
+                0.05002452286994739,
+                0.05174148547203929
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.050090822611136045,
+                "50.0" : 0.050618846277507734,
+                "90.0" : 0.053108331907354915,
+                "95.0" : 0.05385879185081813,
+                "99.0" : 0.05388684971321666,
+                "99.9" : 0.05388684971321666,
+                "99.99" : 0.05388684971321666,
+                "99.999" : 0.05388684971321666,
+                "99.9999" : 0.05388684971321666,
+                "100.0" : 0.05388684971321666
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.05019571121187574,
+                    0.05033490461631028,
+                    0.05011674206514133,
+                    0.05031257860132915,
+                    0.050340716899282996,
+                    0.05095452445331218,
+                    0.050366845588004874,
+                    0.050090822611136045,
+                    0.05032560309844325,
+                    0.05053701014190248
+                ],
+                [
+                    0.05058210035859406,
+                    0.05086893100347318,
+                    0.05082559077205968,
+                    0.050655592196421406,
+                    0.05388684971321666,
+                    0.05332569246524606,
+                    0.051074114446259096,
+                    0.050768599741993214,
+                    0.05094506654953039,
+                    0.05115208688633468
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "ITERATIVE_02",
+            "number" : "20"
+        },
+        "primaryMetric" : {
+            "score" : 0.1091646025170548,
+            "scoreError" : 0.0015868853887160185,
+            "scoreConfidence" : [
+                0.10757771712833879,
+                0.11075148790577082
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.10767016512609344,
+                "50.0" : 0.10848319126559382,
+                "90.0" : 0.11326178405506561,
+                "95.0" : 0.11397768990156248,
+                "99.0" : 0.11400242595747366,
+                "99.9" : 0.11400242595747366,
+                "99.99" : 0.11400242595747366,
+                "99.999" : 0.11400242595747366,
+                "99.9999" : 0.11400242595747366,
+                "100.0" : 0.11400242595747366
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.10905816251390968,
+                    0.10952422072817102,
+                    0.11015341083874951,
+                    0.11104849699740545,
+                    0.11400242595747366,
+                    0.11350770483925007,
+                    0.10905047669546798,
+                    0.10981525451738224,
+                    0.10926638723126031,
+                    0.10877118016206691
+                ],
+                [
+                    0.10767016512609344,
+                    0.10819520236912072,
+                    0.10794925922677277,
+                    0.1078578638319409,
+                    0.10793030885302726,
+                    0.10790195564588145,
+                    0.10784734198349427,
+                    0.10801157798721073,
+                    0.10785575101079875,
+                    0.1078749038256191
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "ITERATIVE_02",
+            "number" : "30"
+        },
+        "primaryMetric" : {
+            "score" : 0.16886144799667696,
+            "scoreError" : 0.005320057640928646,
+            "scoreConfidence" : [
+                0.16354139035574833,
+                0.1741815056376056
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.16101748903778274,
+                "50.0" : 0.17119352009770233,
+                "90.0" : 0.17493028760868692,
+                "95.0" : 0.17538932109479635,
+                "99.0" : 0.17541342707023458,
+                "99.9" : 0.17541342707023458,
+                "99.99" : 0.17541342707023458,
+                "99.999" : 0.17541342707023458,
+                "99.9999" : 0.17541342707023458,
+                "100.0" : 0.17541342707023458
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.17541342707023458,
+                    0.17473033720546555,
+                    0.17465320761250538,
+                    0.17405315275888297,
+                    0.17367206382543873,
+                    0.1749211080336363,
+                    0.17481706366285035,
+                    0.17493130756147032,
+                    0.1742135870027903,
+                    0.17448977503655072
+                ],
+                [
+                    0.16145697551361252,
+                    0.16145509035236624,
+                    0.16279261351988797,
+                    0.16405854001043366,
+                    0.1687149763699659,
+                    0.1659899431066293,
+                    0.16101748903778274,
+                    0.16169599747229776,
+                    0.16206652724426165,
+                    0.162085777536476
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "ITERATIVE_03",
+            "number" : "10"
+        },
+        "primaryMetric" : {
+            "score" : 0.04818351002874329,
+            "scoreError" : 7.306285570634931E-4,
+            "scoreConfidence" : [
+                0.047452881471679795,
+                0.04891413858580679
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.047294959939296645,
+                "50.0" : 0.04802807311762469,
+                "90.0" : 0.04943543690972044,
+                "95.0" : 0.050505055392740576,
+                "99.0" : 0.05056114425125201,
+                "99.9" : 0.05056114425125201,
+                "99.99" : 0.05056114425125201,
+                "99.999" : 0.05056114425125201,
+                "99.9999" : 0.05056114425125201,
+                "100.0" : 0.05056114425125201
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.047658151162180765,
+                    0.047294959939296645,
+                    0.048417502550051776,
+                    0.0490586787697279,
+                    0.05056114425125201,
+                    0.04943936708102341,
+                    0.049400065367993684,
+                    0.04810464447187432,
+                    0.04841777282013608,
+                    0.04751261903283134
+                ],
+                [
+                    0.04739032521644991,
+                    0.04767423861756688,
+                    0.04789287949505847,
+                    0.04760456172624429,
+                    0.047588627040215235,
+                    0.04808279650050761,
+                    0.048020428184583026,
+                    0.048035718050666365,
+                    0.04811856212262344,
+                    0.04739715817458247
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "ITERATIVE_03",
+            "number" : "20"
+        },
+        "primaryMetric" : {
+            "score" : 0.13056215739920934,
+            "scoreError" : 0.0033560702611599193,
+            "scoreConfidence" : [
+                0.12720608713804943,
+                0.13391822766036926
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.12572621308194315,
+                "50.0" : 0.13294014419546862,
+                "90.0" : 0.13495274133608526,
+                "95.0" : 0.13532982187674064,
+                "99.0" : 0.13534380575030286,
+                "99.9" : 0.13534380575030286,
+                "99.99" : 0.13534380575030286,
+                "99.999" : 0.13534380575030286,
+                "99.9999" : 0.13534380575030286,
+                "100.0" : 0.13534380575030286
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.13506412827905825,
+                    0.13340158788206025,
+                    0.13335276610000718,
+                    0.13395025884932835,
+                    0.13534380575030286,
+                    0.13352857284460365,
+                    0.1335596166684523,
+                    0.1336832424238321,
+                    0.1337567039169873,
+                    0.133939387754826
+                ],
+                [
+                    0.12572621308194315,
+                    0.12628969272226537,
+                    0.12613564960792847,
+                    0.13252752229093004,
+                    0.1304188194264711,
+                    0.12629788693809332,
+                    0.12586033651333886,
+                    0.12603170342885228,
+                    0.12621031770066765,
+                    0.12616493580423818
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "com.nickperov.stud.fibonacci.FibonacciGeneratorBenchmark.runFibonacciGenerator",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Amazon Corretto\\jdk11.0.5_10\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms8G",
+            "-Xmx8G"
+        ],
+        "jdkVersion" : "11.0.5",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.5+10-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "generatorType" : "ITERATIVE_03",
+            "number" : "30"
+        },
+        "primaryMetric" : {
+            "score" : 0.2256502980329461,
+            "scoreError" : 0.0089522228578829,
+            "scoreConfidence" : [
+                0.21669807517506318,
+                0.234602520890829
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.2058748612274296,
+                "50.0" : 0.23005402896049393,
+                "90.0" : 0.23534401748501244,
+                "95.0" : 0.23985951189438132,
+                "99.0" : 0.24009473840928908,
+                "99.9" : 0.24009473840928908,
+                "99.99" : 0.24009473840928908,
+                "99.999" : 0.24009473840928908,
+                "99.9999" : 0.24009473840928908,
+                "100.0" : 0.24009473840928908
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    0.2058748612274296,
+                    0.21187187134422764,
+                    0.20748222031407984,
+                    0.21227228260799194,
+                    0.21858509373529525,
+                    0.21736007815408545,
+                    0.21805704779829793,
+                    0.23418510864622552,
+                    0.23492830184992,
+                    0.22869596179396698
+                ],
+                [
+                    0.22961563791216175,
+                    0.23049242000882614,
+                    0.24009473840928908,
+                    0.2323171559052605,
+                    0.2325669154825192,
+                    0.23539020811113381,
+                    0.23424327310385873,
+                    0.23214477828346175,
+                    0.23146884847513136,
+                    0.22535915749575844
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+
