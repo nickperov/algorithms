@@ -11,23 +11,22 @@ enum class Strategy {
 }
 
 fun main(args: Array<String>) {
-    val rounds = generateRounds(100_000_000)
+    val rounds = generateRounds(1_000_000)
     //println(rounds.contentDeepToString())
     Strategy.values().forEach { strategy ->
         val percentageWins = play(rounds, strategy)
-        println("Strategy " + strategy.name + " wins: " + percentageWins + "%")
+        println("Strategy %{strategy.name} wins:$percentageWins%")
     }
 }
 
 private fun play(rounds: Array<Array<Prize>>, strategy: Strategy): Double {
     val result = rounds.map { play(it, strategy) }.toTypedArray()
     val totalWins = result.filter { it }.count()
-    println("Strategy $strategy total wins: $totalWins")
     return (totalWins / (rounds.size / 100).toDouble()).toDouble()
 }
 
 private fun play(round: Array<Prize>, strategy: Strategy): Boolean {
-    val firstTry = Random.nextInt(2)
+    val firstTry = Random.nextInt(3)
     val openedDoor = openDoor(round, firstTry)
     val secondTry = makeSecondTry(firstTry, openedDoor, strategy)
     return round[secondTry] == Prize.CAR
@@ -64,7 +63,7 @@ private fun generateRounds(size: Int): Array<Array<Prize>> {
 }
 
 private fun generateRound(): Array<Prize> {
-    return when (Random.nextInt(2)) {
+    return when (Random.nextInt(3)) {
         0 -> {
             arrayOf(Prize.CAR, Prize.GOAT, Prize.GOAT)
         }
