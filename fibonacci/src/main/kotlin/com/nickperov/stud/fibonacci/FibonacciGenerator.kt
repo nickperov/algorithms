@@ -2,18 +2,19 @@ package com.nickperov.stud.fibonacci
 
 fun main() {
     println("Hello, Fibonacci numbers")
-    
-    val number = 15
+
+    val number = 0
 
     println(FibonacciRecursiveGenerator().calculate(number))
     println(FibonacciTailRecursiveGenerator().calculate(number))
+    println(FibonacciTailRecursiveOptimisedGenerator().calculate(number))
     println(FibonacciDynamicGenerator().calculate(number))
     println(FibonacciBottomUpGenerator().calculate(number))
     println(FibonacciIterativeGenerator01().calculate(number))
     println(FibonacciIterativeGenerator02().calculate(number))
     println(FibonacciIterativeGenerator03().calculate(number))
-    
-    
+
+
 }
 
 
@@ -24,19 +25,22 @@ abstract class FibonacciGenerator {
 class FibonacciRecursiveGenerator : FibonacciGenerator() {
 
     override fun calculate(number: Int): Long {
-        return if (number == 1 || number == 2)
+        return if (number == 0) {
+            0L
+        } else if (number == 1 || number == 2)
             1L
-        else
-            calculate(number - 1) + calculate(number - 2)
+        else calculate(number - 1) + calculate(number - 2)
     }
 }
 
 class FibonacciTailRecursiveGenerator : FibonacciGenerator() {
 
     override fun calculate(number: Int): Long {
-        return if (number == 1 || number == 2)
+        return if (number == 0) {
+            0L
+        } else if (number == 1 || number == 2) {
             1L
-        else calculate(1, 1,  3, number)
+        } else calculate(1, 1, 3, number)
     }
 
     private fun calculate(antePenultimate: Long, penultimate: Long, current: Int, target: Int): Long {
@@ -48,9 +52,11 @@ class FibonacciTailRecursiveGenerator : FibonacciGenerator() {
 class FibonacciTailRecursiveOptimisedGenerator : FibonacciGenerator() {
 
     override fun calculate(number: Int): Long {
-        return if (number == 1 || number == 2)
+        return if (number == 0)
+            0L
+        else if (number == 1 || number == 2)
             1L
-        else calculate(1, 1,  3, number)
+        else calculate(1, 1, 3, number)
     }
 
     private tailrec fun calculate(antePenultimate: Long, penultimate: Long, current: Int, target: Int): Long {
@@ -62,12 +68,18 @@ class FibonacciTailRecursiveOptimisedGenerator : FibonacciGenerator() {
 class FibonacciDynamicGenerator : FibonacciGenerator() {
 
     override fun calculate(number: Int): Long {
-        val accumulator = Array(number - 2) { -1L }
+        val accumulator = if (number > 2) {
+            Array(number - 2) { -1L }
+        } else {
+            Array(0) { -1L }
+        }
         return calculate(number, accumulator)
     }
 
     private fun calculate(number: Int, accumulator: Array<Long>): Long {
-        if (number == 1 || number == 2) {
+        if (number == 0) {
+            return 0L
+        } else if (number == 1 || number == 2) {
             return 1L
         }
 
@@ -80,10 +92,7 @@ class FibonacciDynamicGenerator : FibonacciGenerator() {
             accumulator[index] = value
             value
         }
-
     }
-
-
 }
 
 class FibonacciBottomUpGenerator : FibonacciGenerator() {
@@ -93,6 +102,10 @@ class FibonacciBottomUpGenerator : FibonacciGenerator() {
     }
 
     private fun calculate(number: Int, accumulator: Array<Long>): Long {
+
+        if (number == 0) {
+            return 0L
+        }
 
         for (i in 0 until number) {
             if (i <= 1) {
@@ -110,7 +123,7 @@ class FibonacciIterativeGenerator01 : FibonacciGenerator() {
     override fun calculate(number: Int): Long {
 
         var numberPair = Pair(-1L, -1L)
-        for (i in 1..number) {
+        for (i in 0..number) {
             numberPair = calculate(i, numberPair)
         }
 
@@ -119,6 +132,7 @@ class FibonacciIterativeGenerator01 : FibonacciGenerator() {
 
     private fun calculate(number: Int, prev: Pair<Long, Long>): Pair<Long, Long> {
         return when (number) {
+            0 -> Pair(-1L, 0L)
             1 -> Pair(-1L, 1L)
             2 -> Pair(1L, 1L)
             else -> Pair(prev.second, prev.first + prev.second)
@@ -130,7 +144,7 @@ class FibonacciIterativeGenerator02 : FibonacciGenerator() {
     override fun calculate(number: Int): Long {
 
         val numberPair = arrayOf(-1L, -1L)
-        for (i in 1..number) {
+        for (i in 0..number) {
             calculate(i, numberPair)
         }
 
@@ -139,6 +153,9 @@ class FibonacciIterativeGenerator02 : FibonacciGenerator() {
 
     private fun calculate(number: Int, prev: Array<Long>) {
         when (number) {
+            0 -> {
+                prev[1] = 0L
+            }
             1 -> {
                 prev[1] = 1L
             }

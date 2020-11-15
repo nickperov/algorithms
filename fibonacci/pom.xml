@@ -18,10 +18,10 @@
     <kotlin.version>1.3.72</kotlin.version>
     <kotlin.code.style>official</kotlin.code.style>
     <junit.version>4.12</junit.version>
-    <jmh.version>1.21</jmh.version>
+    <jmh.version>1.26</jmh.version>
     <jmh.generator>default</jmh.generator>
-    <javac.target>1.8</javac.target>
-    <uberjar.name>benchmarks</uberjar.name>
+    <javac.target>11</javac.target>
+    <uberjar.name>fibonacci-benchmark</uberjar.name>
   </properties>
 
   <dependencies>
@@ -183,7 +183,6 @@
           </execution>
         </executions>
       </plugin>
-
     </plugins>
   </build>
 
