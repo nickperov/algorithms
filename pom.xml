@@ -12,7 +12,6 @@
     <module>knapsack</module>
     <module>fibonacci</module>
     <module>monty-hall</module>
-    <module>algorithmic-toolbox</module>
   </modules>
 
 
