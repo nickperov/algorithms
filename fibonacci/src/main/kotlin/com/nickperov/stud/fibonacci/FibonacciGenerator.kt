@@ -14,7 +14,6 @@ fun main() {
     println(FibonacciIterativeGenerator02().calculate(number))
     println(FibonacciIterativeGenerator03().calculate(number))
 
-
 }
 
 
