@@ -1,6 +1,5 @@
 package com.nickperov.stud.algorithms.knapsack
 
-import java.lang.RuntimeException
 import kotlin.random.Random
 
 data class KnapSack(val weightLimit: Int)
@@ -12,7 +11,7 @@ data class ProblemParameters(val knapSackSize: Int, val itemListSize: Int, val i
 data class Problem(val knapSack: KnapSack, val items: List<Item>)
 
 // Default values
-const val knapSackDefaultSize = 100
+const val knapsackDefaultSize = 100
 const val itemListDefaultSize = 50
 const val itemWeightDefaultLimit = 10
 const val itemPriceDefaultLimit = 20
@@ -24,11 +23,11 @@ fun main(args: Array<String>) {
 }
 
 private fun initProblemFromArgs(args: Array<String>): Problem {
-    println("Init from comand line arguments")
-    val (knapSackSize, itemListSize, itemWeightLimit, itemPriceLimit) = initParameters(args)
-    println("Knapsack size: $knapSackSize; product list size: $itemListSize; product limits: (weight: $itemWeightLimit, price: $itemPriceLimit)")
+    println("Init from command line arguments")
+    val (knapsackSize, itemListSize, itemWeightLimit, itemPriceLimit) = initParameters(args)
+    println("Knapsack size: $knapsackSize; product list size: $itemListSize; product limits: (weight: $itemWeightLimit, price: $itemPriceLimit)")
 
-    val knapSack = KnapSack(knapSackSize)
+    val knapSack = KnapSack(knapsackSize)
     val items = initItems(itemListSize, itemWeightLimit, itemPriceLimit)
 
     return Problem(knapSack, items)
@@ -43,7 +42,7 @@ private fun initParameters(args: Array<String>): ProblemParameters {
         ProblemParameters(args[0].toInt(), args[1].toInt(), args[2].toInt(), args[3].toInt())
     } else {
         println("Command line arguments are empty, use default values")
-        ProblemParameters(knapSackDefaultSize, itemListDefaultSize, itemWeightDefaultLimit, itemPriceDefaultLimit)
+        ProblemParameters(knapsackDefaultSize, itemListDefaultSize, itemWeightDefaultLimit, itemPriceDefaultLimit)
     }
 }
 
@@ -58,8 +57,8 @@ private fun printItems(items: List<Item>) {
 }
 
 private fun initItems(number: Int, weightLimit: Int, priceLimit: Int): List<Item> {
-    return generateSequence(0, { i -> i + 1 }).take(number).map { initItem(weightLimit, priceLimit) }.toList()
+    return generateSequence(0) { i -> i + 1 }.take(number).map { initItem(weightLimit, priceLimit) }.toList()
 }
 
-private fun initItem(weightLimit: Int, priceLimit: Int) = Item(Random.nextInt(weightLimit), Random.nextInt(priceLimit))
+private fun initItem(weightLimit: Int, priceLimit: Int) = Item(Random.nextInt(weightLimit) + 1, Random.nextInt(priceLimit) + 1)
 
