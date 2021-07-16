@@ -26,7 +26,7 @@ run main in FibonacciGenerator.kt
 ### Benchmark results
 
 #### On small numbers:
-
+```
 Benchmark                                          (aNumber)        (bAlgorithm)  Mode  Cnt     Score    Error  Units
 FibonacciGeneratorBenchmark.runFibonacciGenerator         10           RECURSIVE  avgt   20     0.124 ±  0.001  us/op
 FibonacciGeneratorBenchmark.runFibonacciGenerator         10      TAIL_RECURSIVE  avgt   20     0.007 ±  0.001  us/op
@@ -55,9 +55,9 @@ FibonacciGeneratorBenchmark.runFibonacciGenerator         30        ITERATIVE_01
 FibonacciGeneratorBenchmark.runFibonacciGenerator         30        ITERATIVE_02  avgt   20     0.131 ±  0.015  us/op
 FibonacciGeneratorBenchmark.runFibonacciGenerator         30        ITERATIVE_03  avgt   20     0.123 ±  0.012  us/op
 FibonacciGeneratorBenchmark.runFibonacciGenerator         30              MATRIX  avgt   20     0.228 ±  0.007  us/op
-
+```
 #### On large numbers (999)
-
+```
 Benchmark                                          (aNumber)        (bAlgorithm)  Mode Cnt Score Error Units 
 FibonacciGeneratorBenchmark.runFibonacciGenerator        999      TAIL_RECURSIVE  avgt   20  0.776 ± 0.002  us/op
 FibonacciGeneratorBenchmark.runFibonacciGenerator        999  TAIL_RECURSIVE_OPT  avgt   20  0.257 ± 0.001  us/op
@@ -67,3 +67,4 @@ FibonacciGeneratorBenchmark.runFibonacciGenerator        999        ITERATIVE_01
 FibonacciGeneratorBenchmark.runFibonacciGenerator        999        ITERATIVE_02  avgt   20  4.884 ± 1.329  us/op
 FibonacciGeneratorBenchmark.runFibonacciGenerator        999        ITERATIVE_03  avgt   20  3.801 ± 0.246  us/op
 FibonacciGeneratorBenchmark.runFibonacciGenerator        999              MATRIX  avgt   20  0.485 ± 0.001  us/op
+```
