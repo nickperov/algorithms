@@ -12,19 +12,19 @@ import java.util.concurrent.TimeUnit
 @State(Scope.Benchmark)
 open class FibonacciGeneratorBenchmark {
 
-    enum class GeneratorType { RECURSIVE, TAIL_RECURSIVE, TAIL_RECURSIVE_OPT, DYNAMIC, BOTTOM_UP, ITERATIVE_01, ITERATIVE_02, ITERATIVE_03}
+    enum class GeneratorType { RECURSIVE, TAIL_RECURSIVE, TAIL_RECURSIVE_OPT, DYNAMIC, BOTTOM_UP, ITERATIVE_01, ITERATIVE_02, ITERATIVE_03, MATRIX }
 
-    @Param("10", "20", "30")
-    var number: Int = 0
-    
-    @Param("RECURSIVE", "TAIL_RECURSIVE", "TAIL_RECURSIVE_OPT", "DYNAMIC", "BOTTOM_UP", "ITERATIVE_01", "ITERATIVE_02", "ITERATIVE_03")
-    lateinit var generatorType: GeneratorType
-    
+    @Param("10", "20", "30", "999")
+    var aNumber: Int = 0
+
+    @Param("RECURSIVE", "TAIL_RECURSIVE", "TAIL_RECURSIVE_OPT", "DYNAMIC", "BOTTOM_UP", "ITERATIVE_01", "ITERATIVE_02", "ITERATIVE_03", "MATRIX")
+    lateinit var bAlgorithm: GeneratorType
+
     private lateinit var fibonacciGenerator: FibonacciGenerator
-    
+
     @Setup
     fun initGenerator() {
-        fibonacciGenerator = when(generatorType) {
+        fibonacciGenerator = when (bAlgorithm) {
             GeneratorType.RECURSIVE -> FibonacciRecursiveGenerator()
             GeneratorType.TAIL_RECURSIVE -> FibonacciTailRecursiveGenerator()
             GeneratorType.TAIL_RECURSIVE_OPT -> FibonacciTailRecursiveOptimisedGenerator()
@@ -33,11 +33,12 @@ open class FibonacciGeneratorBenchmark {
             GeneratorType.ITERATIVE_01 -> FibonacciIterativeGenerator01()
             GeneratorType.ITERATIVE_02 -> FibonacciIterativeGenerator02()
             GeneratorType.ITERATIVE_03 -> FibonacciIterativeGenerator03()
+            GeneratorType.MATRIX -> FibonacciMatrixGenerator()
         }
     }
-    
+
     @Benchmark
-     fun runFibonacciGenerator(): Long {
-        return fibonacciGenerator.calculate(number)
+    fun runFibonacciGenerator(): Long {
+        return fibonacciGenerator.calculate(aNumber)
     }
 }

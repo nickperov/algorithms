@@ -3,17 +3,18 @@ package com.nickperov.stud.fibonacci
 fun main() {
     println("Hello, Fibonacci numbers")
 
-    val number = 0
-
-    println(FibonacciRecursiveGenerator().calculate(number))
-    println(FibonacciTailRecursiveGenerator().calculate(number))
-    println(FibonacciTailRecursiveOptimisedGenerator().calculate(number))
-    println(FibonacciDynamicGenerator().calculate(number))
-    println(FibonacciBottomUpGenerator().calculate(number))
-    println(FibonacciIterativeGenerator01().calculate(number))
-    println(FibonacciIterativeGenerator02().calculate(number))
-    println(FibonacciIterativeGenerator03().calculate(number))
-
+    for (number in 0..10) {
+        println("====================>$number<==================")
+        println(FibonacciRecursiveGenerator().calculate(number))
+        println(FibonacciTailRecursiveGenerator().calculate(number))
+        println(FibonacciTailRecursiveOptimisedGenerator().calculate(number))
+        println(FibonacciDynamicGenerator().calculate(number))
+        println(FibonacciBottomUpGenerator().calculate(number))
+        println(FibonacciIterativeGenerator01().calculate(number))
+        println(FibonacciIterativeGenerator02().calculate(number))
+        println(FibonacciIterativeGenerator03().calculate(number))
+        println(FibonacciMatrixGenerator().calculate(number))
+    }
 }
 
 
@@ -201,4 +202,69 @@ class FibonacciIterativeGenerator03 : FibonacciGenerator() {
             }
         }
     }
+}
+
+
+class FibonacciMatrixGenerator : FibonacciGenerator() {
+    /**
+     *  Matrix:
+    | 0 1 |
+    | 1 1 |
+     */
+    private val matrix = arrayOf(LongArray(2) { it.toLong() }, LongArray(2) { 1L })
+
+    override fun calculate(number: Int): Long {
+        if (number == 0 || number == 1) {
+            return number.toLong()
+        } else if (number == 2) {
+            return 1L
+        } else {
+            var currMatrix = matrix
+            val power = number - 1
+            //val isEven: Boolean = power % 2 != 0
+
+            currMatrix = powerOf(currMatrix, power)
+
+            /*if (isEven) {
+                currMatrix = multiply(currMatrix, matrix)
+            }*/
+
+            return currMatrix[1][1]
+        }
+    }
+
+    private fun powerOf(m: Array<LongArray>, n: Int): Array<LongArray> {
+        return when {
+            n == 1 -> {
+                m
+            }
+            n % 2 == 0 -> {
+                val mP = powerOf(m, n / 2)
+                multiply(mP, mP)
+            }
+            else -> {
+                val mP = powerOf(m, n - 1)
+                multiply(mP, m)
+            }
+        }
+    }
+
+    private fun multiply(m1: Array<LongArray>, m2: Array<LongArray>): Array<LongArray> {
+        val l = m1.size
+        val n = m2.size
+        val result = Array(l) { LongArray(n) { 0L } }
+
+        for (i in 0 until l) {
+            for (k in 0 until n) {
+                var sum = 0L
+                for (j in 0 until m1[i].size) {
+                    sum += m1[i][j] * m2[k][j]
+                }
+                result[i][k] = sum
+            }
+        }
+
+        return result
+    }
+
 }
