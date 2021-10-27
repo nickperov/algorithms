@@ -19,7 +19,8 @@ class FibonacciGeneratorTest {
         FibonacciIterativeGenerator01(),
         FibonacciIterativeGenerator02(),
         FibonacciIterativeGenerator03(),
-        FibonacciMatrixGenerator()
+        FibonacciMatrixGenerator(),
+        FibonacciFormulaGenerator()
     )
 
     @Test
@@ -44,7 +45,8 @@ class FibonacciGeneratorTest {
 
     @Test
     fun advancedCompareTest() {
-        for (i in 0..1000) {
+        for (i in 0..92) {
+            println(i)
             assertEquals(1, generators.takeLast(generators.size - 1).map { it.calculate(i) }.distinct().count())
         }
     }

@@ -1,5 +1,9 @@
 package com.nickperov.stud.fibonacci
 
+import java.math.BigDecimal
+import java.math.MathContext
+import java.math.RoundingMode
+
 fun main() {
     println("Hello, Fibonacci numbers")
 
@@ -266,5 +270,20 @@ class FibonacciMatrixGenerator : FibonacciGenerator() {
 
         return result
     }
+}
 
+class FibonacciFormulaGenerator : FibonacciGenerator() {
+
+    companion object {
+
+        val ROOT_OF_FIVE = BigDecimal.valueOf(5L).sqrt(MathContext.DECIMAL128);
+        val GOLDEN_RATIO = BigDecimal.ONE.add(ROOT_OF_FIVE).divide(BigDecimal.valueOf(2))
+        val PSI = BigDecimal.ONE.subtract(ROOT_OF_FIVE).divide(BigDecimal.valueOf(2))
+    }
+
+    override fun calculate(number: Int): Long {
+        val d = (GOLDEN_RATIO.pow(number).subtract(PSI.pow(number))).divide(ROOT_OF_FIVE)
+        /*println(d)*/
+        return d.setScale(0, RoundingMode.HALF_UP).toLong()
+    }
 }

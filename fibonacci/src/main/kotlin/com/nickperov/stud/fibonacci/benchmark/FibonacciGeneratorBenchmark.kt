@@ -12,12 +12,12 @@ import java.util.concurrent.TimeUnit
 @State(Scope.Benchmark)
 open class FibonacciGeneratorBenchmark {
 
-    enum class GeneratorType { RECURSIVE, TAIL_RECURSIVE, TAIL_RECURSIVE_OPT, DYNAMIC, BOTTOM_UP, ITERATIVE_01, ITERATIVE_02, ITERATIVE_03, MATRIX }
+    enum class GeneratorType { RECURSIVE, TAIL_RECURSIVE, TAIL_RECURSIVE_OPT, DYNAMIC, BOTTOM_UP, ITERATIVE_01, ITERATIVE_02, ITERATIVE_03, MATRIX, FORMULA }
 
-    @Param("10", "20", "30", "999")
+    @Param(/*"10", "20", "30",*/ "92")
     var aNumber: Int = 0
 
-    @Param("RECURSIVE", "TAIL_RECURSIVE", "TAIL_RECURSIVE_OPT", "DYNAMIC", "BOTTOM_UP", "ITERATIVE_01", "ITERATIVE_02", "ITERATIVE_03", "MATRIX")
+    @Param(/*"RECURSIVE",*/ "TAIL_RECURSIVE", "TAIL_RECURSIVE_OPT", "DYNAMIC", "BOTTOM_UP", "ITERATIVE_01", "ITERATIVE_02", "ITERATIVE_03", "MATRIX" /*"FORMULA"*/)
     lateinit var bAlgorithm: GeneratorType
 
     private lateinit var fibonacciGenerator: FibonacciGenerator
@@ -34,6 +34,7 @@ open class FibonacciGeneratorBenchmark {
             GeneratorType.ITERATIVE_02 -> FibonacciIterativeGenerator02()
             GeneratorType.ITERATIVE_03 -> FibonacciIterativeGenerator03()
             GeneratorType.MATRIX -> FibonacciMatrixGenerator()
+            GeneratorType.FORMULA -> FibonacciFormulaGenerator()
         }
     }
 
