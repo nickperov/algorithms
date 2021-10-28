@@ -80,5 +80,11 @@ JMH version: 1.33 VM version: JDK 11.0.7, OpenJDK 64-Bit Server VM, 11.0.7+10-LT
 | 92     | TAIL_RECURSIVE     | avgt | 20  | 0.078 ± | 0.001 | us/op |
 | 92     | TAIL_RECURSIVE_OPT | avgt | 20  | 0.021 ± | 0.001 | us/op |
 
+#### On extra large numbers (1000000) [Using BigInteger]
 
+| Number  | Algorithm          | Mode | Cnt | Score          | Error    | Units |
+|---------|--------------------|------|-----|----------------|----------|-------|
+| 1000000 | TAIL_RECURSIVE_OPT | avgt | 20  | 10130674.571 ± | 5235.281 | us/op |
+| 1000000 | ITERATIVE_02       | avgt | 20  | 10394043.186 ± | 8216.862 | us/op |
+| 1000000 | MATRIX             | avgt | 20  | 61581.599 ±    | 554.081  | us/op |
 
