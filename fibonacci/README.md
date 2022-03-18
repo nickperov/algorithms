@@ -17,11 +17,16 @@ Multiple example of fibonacci numbers calculation, including:
 
 ### Run simple test:
 
-run main in FibonacciGenerator.kt
+run main in FibonacciApp in FibonacciGenerator.kt
+
+### Run as cli app:
+
+1. mvn clean package
+2. java -jar target/fibonacci-app.jar
 
 ### Run JMH benchmark:
 
-1. mvn clean package
+1. mvn clean package -P benchmark
 2. java -jar target/fibonacci-benchmark.jar
 
 ### Implementation details

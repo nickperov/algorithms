@@ -1,6 +1,6 @@
-package com.nickperov.stud.fibonacci.benchmark
+package com.nickperov.stud.algorithms.fibonacci.benchmark
 
-import com.nickperov.stud.fibonacci.*
+import com.nickperov.stud.algorithms.fibonacci.*
 import org.openjdk.jmh.annotations.*
 import java.util.concurrent.TimeUnit
 

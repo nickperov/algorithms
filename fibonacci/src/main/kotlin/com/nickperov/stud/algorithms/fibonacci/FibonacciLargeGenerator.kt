@@ -1,4 +1,4 @@
-package com.nickperov.stud.fibonacci
+package com.nickperov.stud.algorithms.fibonacci
 
 import java.math.BigInteger
 

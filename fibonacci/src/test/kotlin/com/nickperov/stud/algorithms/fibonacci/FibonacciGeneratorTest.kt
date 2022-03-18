@@ -1,4 +1,4 @@
-package com.nickperov.stud.fibonacci
+package com.nickperov.stud.algorithms.fibonacci
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
@@ -24,8 +24,8 @@ class FibonacciGeneratorTest {
     )
 
     @Test
-    fun sest() {
-        println(generators[1].calculate(91))
+    fun testMax() {
+        assertEquals(4660046610375530309, generators[1].calculate(91))
     }
 
     @Test

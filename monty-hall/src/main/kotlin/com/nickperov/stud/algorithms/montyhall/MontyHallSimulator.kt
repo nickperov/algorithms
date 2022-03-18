@@ -10,14 +10,19 @@ enum class Strategy {
     KEEP, CHANGE, GUESS
 }
 
-fun main(args: Array<String>) {
-    val rounds = generateRounds(1_000_000)
-    //println(rounds.contentDeepToString())
-    Strategy.values().forEach { strategy ->
-        val percentageWins = play(rounds, strategy)
-        println("Strategy %{strategy.name} wins:$percentageWins%")
+object MontyHallApp {
+    @JvmStatic
+    fun main(args: Array<String>) {
+        println("Simulate monty hall game with different strategies")
+        val rounds = generateRounds(1_000_000)
+        /*println(rounds.contentDeepToString())*/
+        Strategy.values().forEach { strategy ->
+            val percentageWins = play(rounds, strategy)
+            println("Strategy %{strategy.name} wins:$percentageWins%")
+        }
     }
 }
+
 
 private fun play(rounds: Array<Array<Prize>>, strategy: Strategy): Double {
     val result = rounds.map { play(it, strategy) }.toTypedArray()

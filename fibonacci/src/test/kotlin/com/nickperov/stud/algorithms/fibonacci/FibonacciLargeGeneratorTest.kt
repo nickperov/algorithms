@@ -1,4 +1,4 @@
-package com.nickperov.stud.fibonacci
+package com.nickperov.stud.algorithms.fibonacci
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test

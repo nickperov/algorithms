@@ -1,9 +1,9 @@
-package com.nickperov.stud.fibonacci.benchmark
+package com.nickperov.stud.algorithms.fibonacci.benchmark
 
-import com.nickperov.stud.fibonacci.FibonacciLargeGenerator
-import com.nickperov.stud.fibonacci.FibonacciLargeIterativeGenerator02
-import com.nickperov.stud.fibonacci.FibonacciLargeMatrixGenerator
-import com.nickperov.stud.fibonacci.FibonacciLargeTailRecursiveOptimisedGenerator
+import com.nickperov.stud.algorithms.fibonacci.FibonacciLargeGenerator
+import com.nickperov.stud.algorithms.fibonacci.FibonacciLargeIterativeGenerator02
+import com.nickperov.stud.algorithms.fibonacci.FibonacciLargeMatrixGenerator
+import com.nickperov.stud.algorithms.fibonacci.FibonacciLargeTailRecursiveOptimisedGenerator
 import org.openjdk.jmh.annotations.*
 import java.math.BigInteger
 import java.util.concurrent.TimeUnit

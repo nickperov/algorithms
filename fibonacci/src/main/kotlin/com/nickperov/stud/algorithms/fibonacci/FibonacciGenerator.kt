@@ -1,23 +1,26 @@
-package com.nickperov.stud.fibonacci
+package com.nickperov.stud.algorithms.fibonacci
 
 import java.math.BigDecimal
 import java.math.MathContext
 import java.math.RoundingMode
 
-fun main() {
-    println("Hello, Fibonacci numbers")
+object FibonacciApp {
+    @JvmStatic
+    fun main(args: Array<String>) {
+        println("Hello, Fibonacci numbers")
 
-    for (number in 0..10) {
-        println("====================>$number<==================")
-        println(FibonacciRecursiveGenerator().calculate(number))
-        println(FibonacciTailRecursiveGenerator().calculate(number))
-        println(FibonacciTailRecursiveOptimisedGenerator().calculate(number))
-        println(FibonacciDynamicGenerator().calculate(number))
-        println(FibonacciBottomUpGenerator().calculate(number))
-        println(FibonacciIterativeGenerator01().calculate(number))
-        println(FibonacciIterativeGenerator02().calculate(number))
-        println(FibonacciIterativeGenerator03().calculate(number))
-        println(FibonacciMatrixGenerator().calculate(number))
+        for (number in 0..10) {
+            println("====================>$number<==================")
+            println(FibonacciRecursiveGenerator().calculate(number))
+            println(FibonacciTailRecursiveGenerator().calculate(number))
+            println(FibonacciTailRecursiveOptimisedGenerator().calculate(number))
+            println(FibonacciDynamicGenerator().calculate(number))
+            println(FibonacciBottomUpGenerator().calculate(number))
+            println(FibonacciIterativeGenerator01().calculate(number))
+            println(FibonacciIterativeGenerator02().calculate(number))
+            println(FibonacciIterativeGenerator03().calculate(number))
+            println(FibonacciMatrixGenerator().calculate(number))
+        }
     }
 }
 
