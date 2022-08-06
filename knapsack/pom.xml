@@ -10,9 +10,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>knapsack</artifactId>
+  <name>Knapsack problem</name>
   <packaging>jar</packaging>
-
-  <name>knapsack</name>
 
   <!-- default build -->
   <build>

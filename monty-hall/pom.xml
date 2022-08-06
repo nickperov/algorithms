@@ -8,9 +8,10 @@
     <groupId>com.nickperov.stud</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
-
-  <packaging>jar</packaging>
   <artifactId>monty-hall</artifactId>
+  <name>Monty hall</name>
+  <packaging>jar</packaging>
+
   <properties>
     <main.class>com.nickperov.stud.algorithms.montyhall.MontyHallApp</main.class>
     <jar.name>monty-hall-app</jar.name>
