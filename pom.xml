@@ -12,11 +12,11 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <kotlin.version>1.7.10</kotlin.version>
+    <kotlin.version>1.8.21</kotlin.version>
     <kotlin.code.style>official</kotlin.code.style>
     <junit.version>5.9.0</junit.version>
     <javac.target>17</javac.target>
-    <jmh.version>1.35</jmh.version>
+    <jmh.version>1.36</jmh.version>
     <jmh.generator>default</jmh.generator>
     <benchmark-jar.name>benchmark-jar</benchmark-jar.name>
     <jar.name>AlgorithmsApp</jar.name>
